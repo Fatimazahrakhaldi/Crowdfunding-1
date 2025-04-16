@@ -78,12 +78,12 @@
          </div>
        </div><!-- end row -->
 
-       <div class="row mb-3">
+       <!--<div class="row mb-3">
          <label class="col-sm-2 col-form-labe text-lg-end">{{ trans('admin.link_terms') }}</label>
          <div class="col-sm-10">
            <input type="text" value="{{ $settings->link_terms }}" name="link_terms" class="form-control">
          </div>
-       </div><!-- end row -->
+       </div> end row -->
 
        <div class="row mb-3">
          <label class="col-sm-2 col-form-labe text-lg-end">{{ trans('admin.link_privacy') }}</label>
@@ -145,41 +145,41 @@
          </div>
        </fieldset><!-- end row -->
 
-       <fieldset class="row mb-3">
+      <!-- <fieldset class="row mb-3">
          <legend class="col-form-label col-sm-2 pt-0 text-lg-end">Captcha</legend>
          <div class="col-sm-10">
            <div class="form-check form-switch form-switch-md">
             <input class="form-check-input" type="checkbox" name="captcha" @if ($settings->captcha == 'on') checked="checked" @endif value="1" role="switch">
           </div>
          </div>
-       </fieldset><!-- end row -->
+       </fieldset> end row -->
 
-			 <fieldset class="row mb-3">
+		<!-- 	 <fieldset class="row mb-3">
          <legend class="col-form-label col-sm-2 pt-0 text-lg-end">{{ trans('misc.captcha_on_donations') }}</legend>
          <div class="col-sm-10">
            <div class="form-check form-switch form-switch-md">
             <input class="form-check-input" type="checkbox" name="captcha_on_donations" @if ($settings->captcha_on_donations == 'on') checked="checked" @endif value="on" role="switch">
           </div>
          </div>
-       </fieldset><!-- end row -->
+       </fieldset>end row -->
 
-			 <fieldset class="row mb-3">
+		<!-- 	 <fieldset class="row mb-3">
          <legend class="col-form-label col-sm-2 pt-0 text-lg-end">{{ trans('misc.facebook_login') }}</legend>
          <div class="col-sm-10">
            <div class="form-check form-switch form-switch-md">
             <input class="form-check-input" type="checkbox" name="facebook_login" @if ($settings->facebook_login == 'on') checked="checked" @endif value="on" role="switch">
           </div>
          </div>
-       </fieldset><!-- end row -->
+       </fieldset>end row -->
 
-			 <fieldset class="row mb-3">
+		<!--	 <fieldset class="row mb-3">
          <legend class="col-form-label col-sm-2 pt-0 text-lg-end">{{ trans('misc.google_login') }}</legend>
          <div class="col-sm-10">
            <div class="form-check form-switch form-switch-md">
             <input class="form-check-input" type="checkbox" name="google_login" @if ($settings->google_login == 'on') checked="checked" @endif value="on" role="switch">
           </div>
          </div>
-       </fieldset><!-- end row -->
+       </fieldset> end row -->
 
 
        <div class="row mb-3">

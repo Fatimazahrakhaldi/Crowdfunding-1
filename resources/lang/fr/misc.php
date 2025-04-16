@@ -388,7 +388,7 @@ return array(
 	'categories_subtitle' => 'Trouvez la cause que vous recherchez par catégorie',
 	'explore_new_campaign' => 'Explorer de nouveaux projets',
 	'raised_of' => 'élevé de',
-	'got_it' => 'J\ai compris!',
+	'got_it' => 'J\'ai compris!',
 	'follow_us' => 'Suivez-nous sur',
 	'account_desc' => 'Configurez votre compte ou modifiez votre photo de profil',
 	'password_desc' => 'Mettre à jour ou modifier votre mot de passe',
