@@ -320,7 +320,7 @@ return array(
 	'seleted_pledge' => 'Engagement sélectionné',
 	'edit_reward' => 'Modifier la récompense',
 	'reward' => 'Récompense',
- 	'amount' => 'Montante',
+ 	'amount' => 'Montant',
 	'quantity' => 'Quantité',
 	'delivery' => 'Délai de livraison estimé',
 	'delivery_desc' => '* Le délai minimum de livraison est de (1) un mois.',

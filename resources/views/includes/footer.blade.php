@@ -83,12 +83,12 @@
 <footer class="py-2 bg-dark-3 text-muted">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 copyright">
-        &copy; <?php echo date('Y'); ?> {{ $settings->title }}
-      </div>
-      <div class="col-md-6 text-right social-links">
-        <span class="mr-2">{{ trans('misc.follow_us') }}</span>
-        <ul class="list-inline float-right list-social">
+      <!-- <div class="col-md-6 copyright">
+        &copy; <?php //echo date('Y'); ?> {{ $settings->title }}
+      </div> -->
+      <div class="col-md-12 text-center social-links">
+        <span class="mr-0">{{ trans('misc.follow_us') }}</span>
+        <ul class="list-inline list-social">
 
           @if( $settings->twitter != '' )
             <li class="list-inline-item"><a href="{{$settings->twitter}}" class="ico-social"><i class="fab fa-twitter"></i></a></li>

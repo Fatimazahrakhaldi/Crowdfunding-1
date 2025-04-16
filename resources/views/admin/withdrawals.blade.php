@@ -47,7 +47,7 @@
 										 <td>
 											 <a title="{{$withdrawal->title}}" href="{{ url('campaign',$withdrawal->campaigns()->id) }}" target="_blank">{{ str_limit($withdrawal->campaigns()->title,20,'...') }} <i class="bi-box-arrow-up-right"></i></a>
 											 </td>
-                     <td>@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount.$settings->currency_symbol}}@endif</td>
+                     <td>@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount." ".$settings->currency_symbol}}@endif</td>
                      <td>{{ $withdrawal->gateway == 'Bank' ? trans('misc.bank_transfer') : $withdrawal->gateway }}</td>
                      <td>
                        @if ($withdrawal->status == 'paid')
@@ -98,7 +98,7 @@
 
 													 <!-- start -->
 													 <dt>{{ trans('admin.amount') }}</dt>
-													 <dd><strong class="text-success">@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount.$settings->currency_symbol}}@endif</strong></dd>
+													 <dd><strong class="text-success">@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount." ".$settings->currency_symbol}}@endif</strong></dd>
 													 <!-- ./end -->
 
 													 <!-- start -->

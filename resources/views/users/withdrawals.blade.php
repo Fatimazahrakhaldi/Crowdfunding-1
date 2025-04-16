@@ -50,7 +50,7 @@
                   <td>
                     <a title="{{$withdrawal->title}}" href="{{ url('campaign',$withdrawal->campaigns()->id) }}" target="_blank">{{ str_limit($withdrawal->campaigns()->title,20,'...') }} <i class="fa fa-external-link-square"></i></a>
                     </td>
-                  <td>@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount.$settings->currency_symbol}}@endif</td>
+                  <td>@if($settings->currency_position == 'left'){{ $settings->currency_symbol.$withdrawal->amount }}@else{{$withdrawal->amount." ".$settings->currency_symbol}}@endif</td>
                   <td>{{ $withdrawal->gateway }}</td>
                   <td>
                     @if( $withdrawal->status == 'paid' )

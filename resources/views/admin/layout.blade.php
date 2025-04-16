@@ -45,7 +45,7 @@
 
       <div class="offcanvas offcanvas-start sidebar bg-dark text-white" tabindex="-1" id="sidebar-nav" data-bs-keyboard="false" data-bs-backdrop="false">
       <div class="offcanvas-header">
-          <h5 class="offcanvas-title"><img src="{{ url('public/img/logo.png') }}" width="100" /></h5>
+          <h5 class="offcanvas-title"><img src="{{ url('public/img/logo.png') }}" width="75" /></h5>
           <button type="button" class="btn-close btn-close-custom text-white toggle-menu d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close">
             <i class="bi bi-x-lg"></i>
           </button>
@@ -84,19 +84,19 @@
                   </a>
               </li><!-- /end list -->
 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a href="{{ url('panel/admin/gallery') }}" class="nav-link text-truncate @if (request()->is('panel/admin/gallery')) active @endif">
                       <i class="bi-image me-2"></i>
                        {{ __('misc.gallery') }}
                   </a>
-              </li><!-- /end list -->
+              </li>/end list -->
 
-              <li class="nav-item">
+              <!--<li class="nav-item">
                   <a href="{{ url('panel/admin/blog') }}" class="nav-link text-truncate @if (request()->is('panel/admin/blog')) active @endif">
                       <i class="bi-pencil me-2"></i>
                        {{ __('misc.blog') }}
                   </a>
-              </li><!-- /end list -->
+              </li> /end list -->
 
               <li class="nav-item">
                   <a href="{{ url('panel/admin/campaigns') }}" class="nav-link text-truncate @if (request()->is('panel/admin/campaigns')) active @endif">
@@ -147,7 +147,7 @@
               </li><!-- /end list -->
 
 
-              <li class="nav-item">
+              <!--<li class="nav-item">
                   <a href="{{ url('panel/admin/campaigns/reported') }}" class="nav-link text-truncate @if (request()->is('panel/admin/campaigns/reported')) active @endif">
                       <i class="bi-exclamation-triangle me-2"></i>
 
@@ -157,13 +157,13 @@
 
                       {{ __('misc.campaigns_reported') }}
                   </a>
-              </li><!-- /end list -->
+              </li> /end list -->
 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a href="{{ url('panel/admin/pages') }}" class="nav-link text-truncate @if (request()->is('panel/admin/pages')) active @endif">
                       <i class="bi-file-earmark-text me-2"></i> {{ __('admin.pages') }}
                   </a>
-              </li><!-- /end list -->
+              </li> /end list -->
 
               <li class="nav-item">
                   <a href="#payments" data-bs-toggle="collapse" class="nav-link text-truncate dropdown-toggle @if (request()->is('panel/admin/payments') || request()->is('panel/admin/payments/*')) active @endif" @if (request()->is('panel/admin/payments') || request()->is('panel/admin/payments/*')) aria-expanded="true" @endif>
@@ -193,17 +193,17 @@
               @endforeach
               </div><!-- /end collapse settings -->
 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a href="{{ url('panel/admin/profiles-social') }}" class="nav-link text-truncate @if (request()->is('panel/admin/profiles-social')) active @endif">
                       <i class="bi-share me-2"></i> {{ __('admin.profiles_social') }}
                   </a>
-              </li><!-- /end list -->
+              </li>
 
               <li class="nav-item">
                   <a href="{{ url('panel/admin/pwa') }}" class="nav-link text-truncate @if (request()->is('panel/admin/pwa')) active @endif">
                       <i class="bi-phone me-2"></i> PWA
                   </a>
-              </li><!-- /end list -->
+              </li>/end list -->
 
           </ul>
       </div>
@@ -215,7 +215,7 @@
 
       <div class="d-flex align-items-center">
 
-        <a class="text-dark ms-2 animate-up-2 me-4" href="{{ url('/') }}">
+        <a target="_blank" class="text-dark ms-2 animate-up-2 me-4" href="{{ url('/') }}">
         {{ trans('admin.view_site') }} <i class="bi-arrow-up-right"></i>
         </a>
 
@@ -241,9 +241,9 @@
       </div>
   </div>
 
-  <footer class="admin-footer px-4 py-3 bg-white shadow-custom">
+  <!--<footer class="admin-footer px-4 py-3 bg-white shadow-custom">
     &copy; {{ $settings->title }} v{{$settings->version}} - {{ date('Y') }}
-  </footer>
+  </footer> -->
 
 </main>
 

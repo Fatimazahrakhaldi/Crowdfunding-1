@@ -120,18 +120,18 @@
 && $response->finalized == 0
 )
 		<div class="row margin-bottom-20">
-			<div class="col-md-3">
-				<a class="btn btn-block btn-primary mb-2 no-hover" href="{{ url('rewards/campaign',$response->id) }}">{{trans('misc.add_reward')}}</a>
+			<div class="col-md-3 align-items-stretch d-flex">
+				<a class="align-items-center d-flex justify-content-center btn btn-block btn-primary mb-2 no-hover" href="{{ url('rewards/campaign',$response->id) }}">{{trans('misc.add_reward')}}</a>
 			</div>
-			<div class="col-md-3">
-				<a class="btn btn-success btn-block mb-2 no-hover" href="{{ url('edit/campaign',$response->id) }}">{{trans('users.edit')}}</a>
+			<div class="col-md-3 align-items-stretch d-flex">
+				<a class="align-items-center d-flex justify-content-center btn btn-success btn-block mb-2 no-hover" href="{{ url('edit/campaign',$response->id) }}">{{trans('users.edit')}}</a>
 			</div>
-			<div class="col-md-3">
-				<a class="btn btn-info btn-block mb-2 no-hover" href="{{ url('update/campaign',$response->id) }}">{{trans('misc.post_an_update')}}</a>
+			<div class="col-md-3 align-items-stretch d-flex">
+				<a class="align-items-center d-flex justify-content-center btn btn-info text-white btn-block mb-2 no-hover" href="{{ url('update/campaign',$response->id) }}">{{trans('misc.post_an_update')}}</a>
 			</div>
 			@if( $response->donations()->count() == 0 )
-			<div class="col-md-3">
-				<a href="#" class="btn btn-danger btn-block mb-2 no-hover" id="deleteCampaign" data-url="{{ url('delete/campaign',$response->id) }}">{{trans('misc.delete')}}</a>
+			<div class="col-md-3  align-items-stretch d-flex">
+				<a href="#" class="align-items-center d-flex justify-content-center btn btn-danger btn-block mb-2 no-hover" id="deleteCampaign" data-url="{{ url('delete/campaign',$response->id) }}">{{trans('misc.delete')}}</a>
 			</div>
 			@endif
 		</div>
@@ -370,11 +370,11 @@
 
 
 
-	@if( Auth::check() &&  isset($response->user()->id) && Auth::user()->id != $response->user()->id  )
+	<!--@if( Auth::check() &&  isset($response->user()->id) && Auth::user()->id != $response->user()->id  )
 	<div class="btn-block text-center mt-1">
 		<a href="{{ url('report/campaign', $response->id)}}/{{$response->user()->id }}" class="text-small"><i class="far fa-flag"></i> {{ trans('misc.report') }}</a>
 	</div>
-	@endif
+	@endif-->
 
 @if (isset($response->user()->id))
 	@include('includes.contact_organizer')

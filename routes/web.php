@@ -348,8 +348,10 @@ Route::group(['middleware' => 'role'], function() {
  | Donations
  |--------- -------------------------
  */
+Route::group(['middleware' => 'auth'], function() {
 Route::get('donate/{id}/{slug?}','DonationsController@show');
 Route::post('donate/{id}','DonationsController@send');
+});
 
 // Paypal IPN
 Route::post('paypal/ipn','PayPalController@paypalIpn');

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * Laravel
  *
  * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * @author   Fatima zahra KHALDI, Hajar KHALDI
  */
 
 $uri = urldecode(

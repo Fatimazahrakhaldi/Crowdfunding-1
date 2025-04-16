@@ -1301,8 +1301,8 @@ a:not([class*="btn"]):not([class*="nav-link"]):not([class*="dropdown-item"]):not
     padding: .75rem;
     vertical-align: top;
     border: none;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
     font-size: 14px;
 }
 .table tbody {
@@ -1449,7 +1449,7 @@ a.page-link,
     border-top: 0;
 }
 .padding-top-78 {
-  padding-top: 78px;
+  padding-top: 74px;
 }
 .form-switch.form-switch-md .form-check-input {
   height: 1.5rem;
@@ -1510,4 +1510,8 @@ header nav.fixed-top.bg-dark {
     backdrop-filter: blur(10px);
     background: rgb(255 255 255 / 72%)!important;
 
+}
+
+.offcanvas-header {
+    justify-content: center;
 }

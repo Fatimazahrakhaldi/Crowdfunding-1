@@ -339,7 +339,7 @@ public static function resizeImageFixed( $image, $width, $height, $imageNew = nu
 		if($settings->currency_position == 'left') {
 			$amount = $settings->currency_symbol.number_format($value, $decimal, $decimalDot, $decimalComma);
 		} elseif($settings->currency_position == 'right') {
-			$amount = number_format($value, $decimal, $decimalDot, $decimalComma).$settings->currency_symbol;
+			$amount = number_format($value, $decimal, $decimalDot, $decimalComma)." ".$settings->currency_symbol;
 		} else {
 			$amount = $settings->currency_symbol.number_format($value, $decimal, $decimalDot, $decimalComma);
 		}

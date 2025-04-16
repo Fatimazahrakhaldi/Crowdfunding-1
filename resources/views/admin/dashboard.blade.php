@@ -8,7 +8,7 @@ var datalastDonations = [{!!$datalastDonations!!}];
 @endsection
 
 @section('content')
-	<h4 class="mb-4 fw-light">{{ __('admin.dashboard') }} <small class="fs-6">v{{$settings->version}}</small></h4>
+	<h4 class="mb-4 fw-light">{{ __('admin.dashboard') }} <!--<small class="fs-6">v{{$settings->version}}</small>--></h4>
 
 <div class="content">
 	<div class="row">

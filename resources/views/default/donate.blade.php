@@ -136,7 +136,7 @@ var campaignId = {{ $response->id }};
          <label>{{ trans('misc.enter_your_donation') }}</label>
          <div class="input-group has-success">
              <span class="input-group-text">{{$settings->currency_symbol}}</span>
-           <input type="number" min="{{$settings->min_donation_amount}}"  autocomplete="off" id="onlyNumber" class="form-control form-control-lg" name="amount" @if( isset($pledge) )readonly='readonly'@endif value="@if( isset($pledge) ){{$pledge->amount}}@endif" placeholder="{{trans('misc.minimum_amount')}} @if($settings->currency_position == 'left') {{$settings->currency_symbol.$settings->min_donation_amount}} @else {{$settings->min_donation_amount.$settings->currency_symbol}} @endif {{$settings->currency_code}}">
+           <input type="number" min="{{$settings->min_donation_amount}}"  autocomplete="off" id="onlyNumber" class="form-control form-control-lg" name="amount" @if( isset($pledge) )readonly='readonly'@endif value="@if( isset($pledge) ){{$pledge->amount}}@endif" placeholder="{{trans('misc.minimum_amount')}} @if($settings->currency_position == 'left') {{$settings->currency_symbol.$settings->min_donation_amount}} @else {{$settings->min_donation_amount.' '.$settings->currency_symbol}} @endif {{$settings->currency_code}}">
          </div>
        </div>
 
